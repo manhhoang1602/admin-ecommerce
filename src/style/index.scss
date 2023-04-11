@@ -1,0 +1,257 @@
+@import "src/commons/editor/EditorComponent";
+@import "custom-antd/button";
+@import "custom-antd/form";
+@import "custom-antd/page-header";
+@import "custom-antd/Popover";
+@import "custom-antd/modal";
+@import "custom-antd/table";
+@import "custom-antd/card";
+@import "custom-antd/popconfirm";
+@import "mixin";
+@import "box-shadow";
+@import "custom-antd/descriptions";
+@import "custom-antd/tabs";
+
+@import "src/modules/login/Login";
+
+// ANTD
+.ant-back-top {
+  transform: translate(80px, 30px);
+}
+
+.ant-layout-header {
+  z-index: 10 !important;
+}
+
+// END ANTD
+
+//STYLE COMMONS
+//FONT
+.font-bold {
+  font-weight: bold;
+}
+
+//END FONT
+
+//FLEX
+.d-flex {
+  display: flex;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.align-item-end {
+  align-items: flex-end;
+}
+
+.align-item-baseline {
+  align-items: baseline;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+//END FLEX
+
+//SCROLL STYLE
+.scroll-custom {
+  @include custom-scroll;
+}
+
+//END SCROLL STYLE
+
+// PADDING
+.style-box {
+  margin: 8px;
+  background-color: white;
+  border-radius: 4px;
+  //@include box-shadow4;
+  padding: 8px 8px;
+  border-bottom: 1.5px solid #f1f1f1;
+}
+
+// END PADDING
+
+// MARGIN
+.mr-16 {
+  margin-right: 16px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.ml-16 {
+  margin-left: 16px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.mr-32 {
+  margin-top: 32px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+// END MARGIN
+
+// ICON
+i {
+  cursor: pointer;
+}
+
+// END ICON
+
+.title-card {
+  color: #007aff;
+}
+
+// INPUT
+.width-200 {
+  width: 200px !important;
+}
+
+.width-150 {
+  width: 150px;
+}
+
+// TEXT PRIMARY
+.text-primary {
+  color: #007aff;
+}
+
+input[inputmode='numeric'] {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  width: 100%;
+  border-radius: 2px;
+  padding: 4px 12px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #479dfc;
+  }
+
+  &::placeholder {
+    color: rgba(118, 118, 118, 0.5) !important;
+  }
+}
+
+// END INPUT
+
+// SELECT MULTIPLE
+.ant-select {
+  width: 100%;
+}
+
+// PLACEHOLDER UPLOAD FILE
+.placeholder-file {
+  color: gray;
+  font-size: 12px;
+}
+
+.ant-select-multiple {
+  .ant-select-selector {
+    .ant-select-selection-overflow-item {
+      .ant-select-selection-search {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+// END SELECT MULTIPLE
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif !important;
+  color: gray !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}

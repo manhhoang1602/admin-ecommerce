@@ -1,0 +1,10 @@
+@import "src/style/color";
+@import "src/style/mixin";
+@import "src/style/box-shadow";
+
+.rdw-editor-main{
+  //@include box-shadow4;
+  border: 1.5px solid #f1f1f1;
+  @include custom-scroll;
+  padding: 4px 20px;
+}

@@ -1,0 +1,84 @@
+$green: rgba(0, 128, 0, 0.8);
+$green-light: rgba(0, 128, 0, 0.75);
+
+$orange: rgba(255, 193, 7, 1);
+$orange-light: rgba(255, 193, 7, 0.75);
+
+$gray: rgba(108, 117, 125, 1);
+$gray-light: rgba(108, 117, 125, 0.75);
+
+$min-width: 120px;
+$border-radius: 4px;
+
+.ant-btn{
+  min-width: $min-width !important;
+  border-radius: $border-radius !important;
+  font-family: "Open Sans-bold";
+
+  i {
+    margin-right: 4px;
+  }
+
+  .fa-toggle-on, .fa-toggle-off {
+    font-size: 18px;
+    transform: translateY(2px);
+  }
+}
+
+.btn-success {
+  background-color: $green !important;
+  border: 1px solid $green !important;
+  outline: $green !important;
+  color: white !important;
+
+  &:hover {
+    background-color: $green-light !important;
+    border: 1px solid $green-light !important;
+    outline: 1.5px $green-light !important;
+  }
+}
+
+.btn-warning {
+  background-color: $orange !important;
+  border: 1px solid $orange !important;
+  outline: $orange !important;
+  color: white !important;
+
+  &:hover {
+    background-color: $orange-light !important;
+    border: 1px solid $orange-light !important;
+    outline: 1.5px $orange-light !important;
+  }
+}
+.btn-secondary {
+  background-color: $gray !important;
+  border: 1px solid $gray !important;
+  outline: $gray !important;
+
+  &:hover {
+    background-color: $gray-light !important;
+    border: 1px solid $gray-light !important;
+    outline: 1.5px $gray-light !important;
+  }
+}
+
+
+.btn-warning-text {
+  color: $orange !important;
+  font-family: "Open Sans-bold";
+}
+
+.btn-success-text {
+  color: $green !important;
+  font-family: "Open Sans-bold";
+}
+
+.btn-primary-text {
+  color: #007aff !important;
+  font-family: "Open Sans-bold";
+}
+
+.btn-secondary-text{
+  color: $gray !important;
+  font-family: "Open Sans-bold";
+}

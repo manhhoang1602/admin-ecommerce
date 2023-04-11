@@ -1,0 +1,29 @@
+@import "src/style/box-shadow";
+
+.ant-page-header {
+  background-color: white !important;
+  margin: 8px !important;
+  padding: 4px 8px !important;
+  border-radius: 4px;
+  //@include box-shadow4
+  border-bottom: 1.5px solid #f1f1f1;
+
+
+  .ant-page-header-heading {
+    .ant-page-header-heading-left {
+      .ant-page-header-heading-title {
+        font-size: 20px;
+        font-family: "Open Sans-bold";
+      }
+    }
+  }
+
+  .ant-page-header-content {
+    .ant-breadcrumb {
+      .ant-breadcrumb-link {
+        font-weight: bold !important;
+        color: gray;
+      }
+    }
+  }
+}

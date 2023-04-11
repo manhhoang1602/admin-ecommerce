@@ -1,0 +1,23 @@
+.ant-card {
+  .ant-card-body {
+    padding: 8px;
+    .ant-descriptions {
+      .ant-descriptions-row {
+        .ant-descriptions-item {
+          .ant-descriptions-item-label {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-card-head {
+    font-family: "Open Sans-bold";
+    color: #007aff;
+    padding-left: 10px;
+    .ant-card-head-wrapper{
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$bg-form: rgba(250, 250, 250, 1);
+
+.login {
+  &__form {
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-form;
+
+    padding: 50px;
+
+    &__logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__img {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,111 @@
+@import "src/style/box-shadow";
+@import "src/style/color";
+
+.layout {
+  // override css ant
+  //.ant-layout {
+  //  //background-color: $white !important;
+  //  //
+  //  //.ant-layout-sider-children {
+  //  //  @include box-shadow7;
+  //  //}
+  //}
+
+  // header
+
+  .ant-layout-header {
+    height: 50px;
+
+    .wrapper-content-header {
+      height: 50px;
+    }
+
+
+    .ant-scroll-number{
+      transform: translate(-15px, -2px) !important;
+      transform-origin: 0!important;
+    }
+  }
+
+  .ant-layout-content{
+    margin-top: 48px;
+  }
+
+  .user-info-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 24px 0;
+
+    .user-name {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+
+  .site-layout-background {
+    padding: 0 !important;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    border-bottom: 1.5px solid #f1f1f1;
+    //@include box-shadow7;
+
+    .wrapper-content-header {
+      display: flex;
+      justify-content: space-between;
+
+      .brand-component {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .name-brand{
+          color: green;
+          font-weight: bold;
+          font-size: 24px;
+          background: -webkit-linear-gradient(30deg, rgba(0, 128, 0, 0.8) 49%, rgba(225, 188, 0, .6) 20%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .option-top-component {
+        flex-grow: 1;
+        padding-right: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .wrapper-icon-header {
+          i {
+            padding: 11px 11px;
+            border-radius: 50%;
+            transition: all 0.25s ease-in;
+
+            &:hover {
+              @include box-shadow3;
+              transform: scale(1.15);
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  &__site-layout {
+    // content
+    &__site-layout-background {
+      padding: 0 4px;
+      min-height: calc(100vh - 90px) !important;
+      margin-top: 70px;
+      //@include box-shadow7;
+    }
+  }
+}

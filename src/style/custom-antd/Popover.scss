@@ -1,0 +1,54 @@
+@import "src/style/color";
+
+.ant-popover {
+  .ant-popover-content {
+    .ant-popover-arrow {
+      .ant-popover-arrow-content {
+        display: none;
+      }
+    }
+
+    .ant-popover-inner {
+      .ant-popover-inner-content {
+        padding: 0px !important;
+
+        // HEADER
+        .content-list-account {
+          padding: 0px;
+          color: black;
+          font-size: 14px;
+
+          .item {
+            padding: 3px 8px;
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+            border-bottom: 1px solid $light-gray;
+            width: 160px;
+
+            &:last-child {
+              border: none;
+            }
+
+            &:hover {
+              background-color: $light-gray;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-popover-placement-bottom {
+  left: 0 !important;
+
+  .ant-popover-content {
+    .ant-popover-inner {
+      position: fixed;
+      top: 50px !important;
+      right: 50px !important;
+    }
+  }
+
+}

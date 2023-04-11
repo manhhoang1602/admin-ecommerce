@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  tpmart_admin:
+    image: windsoft2018/tpmart_admin:dev
+    restart: always
+    ports:
+      - "6789:80"
